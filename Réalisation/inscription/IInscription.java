@@ -1,3 +1,3 @@
 public interface IInscription{
-    public String affiche();
+	public String affiche();
 }

@@ -1,5 +1,5 @@
+﻿import java.time.LocalDate;
 public class Etudiant extends Personne{
-
 
     private String tuteur;
     private int annee;
@@ -10,33 +10,31 @@ public class Etudiant extends Personne{
     //Constructeur
        //Par defaut
            public Etudiant(){
+	super();
           }
       //Surcharge du Contructeur
          //Creer un Objet puis de l'initialiser
           public Etudiant(String nomComplet,
-               LocalDate dateNaiss,String tuteur,int annee ){
+               String dateNaiss,String tuteur,int annee ){
             //Initialisation de la personne
-              super(nomComplet,dateNaiss)
+              super(nomComplet,dateNaiss);
              this.tuteur=tuteur;
              this.annee=annee;
           }
 
    //Getters and Setters
-     public string getTuteur(){
-          return this.tuteur;
-     }
-
-     public void setTuteur(String tuteur){
-            this.tuteur=tuteur;
-     }
-      public string getAnnee(){
-          return this.annee;
-     }
-
-     public void setAnnee(int annee){
-            this.annee=annee;
-     }
-
+      public String getTuteur(){
+	return this.tuteur;
+      }
+      public void setTuteur(String tuteur){
+	this.tuteur = tuteur;
+      }
+      public String getAnnee(){
+	return this.annee;
+      }
+      public String setAnnee(String annee){
+	this.annee = annee;
+      }
    //redefinition de la methode affiche()
 
     @Override

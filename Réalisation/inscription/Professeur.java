@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 public class Professeur extends Personne{
 	private ArrayList<String> matieres;
 
